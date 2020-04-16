@@ -109,3 +109,23 @@ end
 array2 = [1, 2, 3, 4, 5]
 array2.each { |double| puts double*2 }
 # Which will double each value in the array and then print it on separate lines.
+
+# We can also create an array from a string, as in the following example (which will search for and replace words in a 
+# string.
+
+puts "Your text: "
+text = gets.chomp
+puts "Word to redact: "
+redact = gets.chomp
+
+words = text.split (" ")
+
+words.each = do |word|
+  if word == redact
+    print "REDACTED "
+  else 
+    print word + " "
+  end
+end
+# So we have here an extremely simple program that will separate each word of the string, as we can see in line 121, and then
+# compare each word against the word to redact, and then print either a) the word or b) "REDACTED ".
