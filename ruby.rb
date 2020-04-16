@@ -153,18 +153,41 @@ hash2["key4"] = "value4"
 
 # So how can we access multiple values?  Well, here's an example that will print each month and its season from an array:
 hash3 = {
-  "Jan" => "Winter"
-  "Feb" => "Winter"
-  "Mar" => "Spring"
-  "Apr" => "Spring"
-  "May" => "Spring"
-  "Jun" => "Summer"
-  "Jul" => "Summer"
-  "Aug" => "Summer"
-  "Sep" => "Fall"
-  "Oct" => "Fall"
+  "Jan" => "Winter",
+  "Feb" => "Winter",
+  "Mar" => "Spring",
+  "Apr" => "Spring",
+  "May" => "Spring",
+  "Jun" => "Summer",
+  "Jul" => "Summer",
+  "Aug" => "Summer",
+  "Sep" => "Fall",
+  "Oct" => "Fall",
   "Dec" => "Winter"
   }
 hash3.each do |month, season|
   puts "#{month}: #{season}"
 end
+
+# With a little work, you can even turn user input into an array and then a hash, like the histogram I made along with Codecademy:
+
+puts "Your phrase: "
+text = gets.chomp
+  # First, we get the text.
+words = text.split (" ")
+  # Then, we split the text into an array of words.
+frequencies = Hash.new(0)
+  # We then create a hash, 'frequencies', and set its value to zero.
+words.each {|word| frequencies[word] +=1}
+  # We then create a function that will count each word as a key and increment its value each time the word is found.
+frequencies = frequencies.sort_by do |word, count|
+  count
+end
+  # This will the words by their frequency (count), replacing the unsorted data in the hash.
+frequencies.reverse!
+  # This reverses the hash info, so it's now sorted from high value to low value.
+frequencies.each do |word, count| 
+  puts word + " " + count.to_s
+end
+  # This will print each word followed by its count. Notice the '.to_s', which converts count's value to a string.
+
