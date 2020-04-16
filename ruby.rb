@@ -150,3 +150,21 @@ hash = {
 hash2 = Hash.new
   # and add to it using the following code
 hash2["key4"] = "value4"
+
+# So how can we access multiple values?  Well, here's an example that will print each month and its season from an array:
+hash3 = {
+  "Jan" => "Winter"
+  "Feb" => "Winter"
+  "Mar" => "Spring"
+  "Apr" => "Spring"
+  "May" => "Spring"
+  "Jun" => "Summer"
+  "Jul" => "Summer"
+  "Aug" => "Summer"
+  "Sep" => "Fall"
+  "Oct" => "Fall"
+  "Dec" => "Winter"
+  }
+hash3.each do |month, season|
+  puts "#{month}: #{season}"
+end
