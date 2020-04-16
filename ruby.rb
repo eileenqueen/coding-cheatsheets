@@ -101,13 +101,13 @@ array = [ 1, 2, 3, 7, 10, 17]
   # position 2, '7' is in position 3, etc.
 # You can also make arrays of strings, so long as each string is enclosed in "", and of arrays in separate brackets (these are
   # called multidimensional arrays).
-# The best part about arrays is that they're really powerful.  Take a look at this:
+# The best part about arrays is that they're really powerful. Take a look at this:
 
 array.each do |x|
   x += 10
   puts array
 end
-# And this will add 10 to each value in the array before printing it.  Another valid way to write this would be to replace the
+# And this will add 10 to each value in the array before printing it. Another valid way to write this would be to replace the
   # do/end syntax with { }, or even to condense it to one line:
 
 array2 = [1, 2, 3, 4, 5]
@@ -133,3 +133,15 @@ words.each = do |word|
 end
 # So we have here an extremely simple program that will separate each word of the string, as we can see in line 121, and then
   # compare each word against the word to redact, and then print either a) the word or b) "REDACTED ".
+
+
+# H A S H E S
+# They're like dictionaries in Python or objects in JS: a collection of key-value pairs. They're more flexible than arrays.
+# Here's a meaningless explanation:
+
+hash = {
+  key1 => value1,
+  key2 => value2,
+  key3 => value3
+  }
+# Note that the keys and values can be any combination of strings, characters, values, numbers, etc.
