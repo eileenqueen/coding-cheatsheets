@@ -13,7 +13,7 @@ as 'print' - but it will ensure that there is a line break after!"
 print "What's your name?"
 name = gets.chomp
 # The leftmost value 'name' is a new variable that we're declaring. We are setting it equal to a value that the user will
-# input as they answer the printed question.
+  # input as they answer the printed question.
 
 
 
@@ -26,13 +26,13 @@ while counter < 11
   counter += 1
 end
 # So here, we create a variable, 'counter', and set it equal to 1. We then create a loop that while our variable 'counter' 
-# has a value less than 11, we will print the value and then add one to the current value (another way to write line 24 is 
-# "counter = counter + 1", but isn't that a handful? As soon as our condition is no longer true, the loop will end.  
-# So, it will end after the counter has printed the numbers 1-10, inclusive.
+  # has a value less than 11, we will print the value and then add one to the current value (another way to write line 24 is 
+  # "counter = counter + 1", but isn't that a handful? As soon as our condition is no longer true, the loop will end.  
+  # So, it will end after the counter has printed the numbers 1-10, inclusive.
 
 # Note that a while loop will continue until its condition is false, so you can manipulate it to be infinite.
 
-#Let's make some different kinds of loops that will achieve the same results. They're pretty self-explainatory:
+# Let's make some different kinds of loops that will achieve the same results. They're pretty self-explainatory:
 
 counter2 = 1
 until counter2 > 10
@@ -98,7 +98,9 @@ end
 array = [ 1, 2, 3, 7, 10, 17]
 
 # Note that values in an array are indexed from 0, so in this array '1' is in position 0, '2' is in position 1, '3' is in
-# position 2, '7' is in position 3, etc.
+  # position 2, '7' is in position 3, etc.
+# You can also make arrays of strings, so long as each string is enclosed in "", and of arrays in separate brackets (these are
+  # called multidimensional arrays).
 # The best part about arrays is that they're really powerful.  Take a look at this:
 
 array.each do |x|
@@ -106,14 +108,14 @@ array.each do |x|
   puts array
 end
 # And this will add 10 to each value in the array before printing it.  Another valid way to write this would be to replace the
-# do/end syntax with { }, or even to condense it to one line:
+  # do/end syntax with { }, or even to condense it to one line:
 
 array2 = [1, 2, 3, 4, 5]
 array2.each { |double| puts double*2 }
 # Which will double each value in the array and then print it on separate lines.
 
 # We can also create an array from a string, as in the following example (which will search for and replace words in a 
-# string.
+  # string.
 
 puts "Your text: "
 text = gets.chomp
@@ -130,4 +132,4 @@ words.each = do |word|
   end
 end
 # So we have here an extremely simple program that will separate each word of the string, as we can see in line 121, and then
-# compare each word against the word to redact, and then print either a) the word or b) "REDACTED ".
+  # compare each word against the word to redact, and then print either a) the word or b) "REDACTED ".
