@@ -1,0 +1,111 @@
+# I N T R O
+# Let's start by adding comments with a pound symbol/hash!
+
+print "The text in the quotations will be printed!"
+
+puts "This stands for 'put string,' and since a string is just a series of characters, it will do just about the same thing 
+as 'print' - but it will ensure that there is a line break after!"
+
+
+# U S E R I N P U T
+# Maybe we want to get information from the user. We can do that by:
+
+print "What's your name?"
+name = gets.chomp
+# The leftmost value 'name' is a new variable that we're declaring. We are setting it equal to a value that the user will
+# input as they answer the printed question.
+
+
+
+# L O O P S
+# We can do lots of loops in Ruby, too!  Here's a basic 'while' loop that will count to ten.
+
+counter = 1
+while counter < 11
+  puts counter
+  counter += 1
+end
+# So here, we create a variable, 'counter', and set it equal to 1. We then create a loop that while our variable 'counter' 
+# has a value less than 11, we will print the value and then add one to the current value (another way to write line 24 is 
+# "counter = counter + 1", but isn't that a handful? As soon as our condition is no longer true, the loop will end.  
+# So, it will end after the counter has printed the numbers 1-10, inclusive.
+
+# Note that a while loop will continue until its condition is false, so you can manipulate it to be infinite.
+
+#Let's make some different kinds of loops that will achieve the same results. They're pretty self-explainatory:
+
+counter2 = 1
+until counter2 > 10
+  puts counter2
+  counter2 +=1
+end
+
+# And yet another method:
+
+for counter3 in 1..10
+  puts counter3
+end
+# Notice that there are two dots between 1 and 10? This means that we include the final number in our counting.
+# We can exclude the final value by using three dots instead of two:
+
+for counter4 in 1...11
+  puts counter4
+end
+# 'for' loops are great when you already know your parameters when you're writing the code.
+
+# Another way to repeat an action is an iterator!  Let's look into some examples:
+
+loop { print "hello" }
+# This will infinitely print "hello". Yikes. Good thing this page won't ever run as a program.
+# We can, however, modify this with the '.times' iterator:
+
+5.times { print "hello" }
+# Now 'hello' will only be printed 5 times!
+
+# We can substitute the 'do'/'end' syntax for the opening { and closing }, so we can add code and make it more sophisticated:
+
+counter5 = 1
+loop do
+  puts counter5 #could be 'print counter5' if you want all the numbers on the same line with no spacing
+  counter5 += 1
+  break if counter5 > 10
+end
+# Note the 'break if' command, which tells the loop a condition under which it should stop.
+# We could of course rewrite the code to start with a variable = 0 as follows:
+
+counter6 = 0
+loop do
+  counter6 += 1
+  puts counter6
+  break if counter6 > 10
+end
+
+# Or maybe we want to skip all the even values using a 'next if' function:
+
+counter7 = 0
+loop do
+  counter7 += 1
+  next if counter7 %2 == 0
+  puts counter7
+  break if counter7 > 10
+end
+
+
+# A R R A Y S 
+# So far we've just been working with single-value variables. Let's look at how we can store multiple values in Ruby!
+# This is called an 'array', and in Ruby, it's enclosed in brackets:
+
+array = [ 1, 2, 3, 7, 10, 17]
+
+# The best part about arrays is that they're really powerful.  Take a look at this:
+
+array.each do |x|
+  x += 10
+  puts array
+end
+# And this will add 10 to each value in the array before printing it.  Another valid way to write this would be to replace the
+# do/end syntax with { }, or even to condense it to one line:
+
+array2 = [1, 2, 3, 4, 5]
+array2.each { |double| puts double*2 }
+# Which will double each value in the array and then print it on separate lines.
