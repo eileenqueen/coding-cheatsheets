@@ -18,13 +18,15 @@ My current projects include:
 
   * [HTML](https://github.com/eileenqueen/coding-cheatsheets/blob/html/html.html) 
   * [C Language](https://github.com/eileenqueen/coding-cheatsheets/blob/html/clang.c)
+  * Ruby
   * Markdown ~~if you count this README page, which I just learned Markdown to make~~
 
 My upcoming projects include:
 
-  * Ruby
-  * Bash Scripting
   * CSS
+  * Bash Scripting
+  * Python
+  * Javascript
   * And any other languages I decide to learn!
 
 This is a personal project, but if you are new to coding, feel free to use my notes!
