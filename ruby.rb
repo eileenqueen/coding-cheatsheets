@@ -145,3 +145,8 @@ hash = {
   key3 => value3
   }
 # Note that the keys and values can be any combination of strings, characters, values, numbers, etc.
+
+# You can also create new hashes using the syntax:
+hash2 = Hash.new
+  # and add to it using the following code
+hash2["key4"] = "value4"
