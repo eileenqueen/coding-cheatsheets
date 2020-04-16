@@ -16,8 +16,8 @@ And here we are.
 
 My current projects include:
 
-  * HTML
-  * C Language
+  * [HTML](https://github.com/eileenqueen/coding-cheatsheets/blob/html/html.html) 
+  * [C Language](https://github.com/eileenqueen/coding-cheatsheets/blob/html/clang.c)
   * Markdown ~~if you count this README page, which I just learned Markdown to make~~
 
 My upcoming projects include:
