@@ -97,6 +97,8 @@ end
 
 array = [ 1, 2, 3, 7, 10, 17]
 
+# Note that values in an array are indexed from 0, so in this array '1' is in position 0, '2' is in position 1, '3' is in
+# position 2, '7' is in position 3, etc.
 # The best part about arrays is that they're really powerful.  Take a look at this:
 
 array.each do |x|
