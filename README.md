@@ -17,13 +17,14 @@ And here we are.
 My current projects include:
 
   * HTML
+  * C Language
   * Markdown ~~if you count this README page, which I just learned Markdown to make~~
 
 My upcoming projects include:
 
-  * CSS
-  * Bash Scripting
   * Ruby
+  * Bash Scripting
+  * CSS
   * And any other languages I decide to learn!
 
 This is a personal project, but if you are new to coding, feel free to use my notes!
