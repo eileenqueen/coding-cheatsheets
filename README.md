@@ -18,7 +18,7 @@ My current projects include:
 
   * [HTML](https://github.com/eileenqueen/coding-cheatsheets/blob/html/html.html) 
   * [C Language](https://github.com/eileenqueen/coding-cheatsheets/blob/html/clang.c)
-  * Ruby
+  * [Ruby](https://github.com/eileenqueen/coding-cheatsheets/blob/html/ruby.rb)
   * Markdown ~~if you count this README page, which I just learned Markdown to make~~
 
 My upcoming projects include:
