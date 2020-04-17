@@ -218,3 +218,20 @@ end
 
 travel("I've been to ", "France", "Japan", "Argentina")
 # Which will print, on separate lines, "I've been to France. / I've been to Japan. / I've been to Argentina."
+
+# Here's a more advanced example I made in Codecademy:
+def alphabetize(arr, rev = false)
+  arr.sort!
+  if rev == true
+    return arr.reverse!
+  elsif rev == false
+    return arr
+  end
+end
+  # This method, 'alphabetize', takes an array and then a second value 'rev' which is false by default.  That means that we 
+  # will have to specify if we want it to be 'true', but we don't have to do anything if we want it to remain false.
+numbers = [4, 8, 2, 6]
+puts alphabetize(numbers)
+  # This will print the numbers in order of small-large (or A-Z)
+puts alphabetize(numbers, true)
+  # This will print the numbers in order of large-small (or Z-A)
