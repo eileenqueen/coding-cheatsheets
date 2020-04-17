@@ -191,3 +191,30 @@ frequencies.each do |word, count|
 end
   # This will print each word followed by its count. Notice the '.to_s', which converts count's value to a string.
 
+
+# M E T H O D S
+# A method - reusable lines of code that accomplishes a specific purpose - is another powerful tool in Ruby.
+
+# Methods consist of: 1) a header containing the 'def' keyword, the name of the method, and arguments the method takes.
+def array_of_10
+  # 2) The body, or the code block containing the procedures of the method.
+  puts (1..10).to_a
+  # 3) And, of course, don't forget to close with 'end'.
+end
+# If we don't want to print the method, we can use the procedure "return" to store the value for later.
+
+# Let's take it one step further:
+def double(n)
+  puts n * 2 
+end
+  # Here we have created a method that accepts the paramater 'n', which we can turn into an argument by calling upon it:
+double(4)
+  # With the argument '4', this method would return the value '8'
+
+# We can also use something called "splat arguements" for when a method can receive more than one argument:
+def travel(header, *countries)
+  countries.each {|country| puts "#{header} #{country}."}
+end
+
+travel("I've been to ", "France", "Japan", "Argentina")
+# Which will print, on separate lines, "I've been to France. / I've been to Japan. / I've been to Argentina."
