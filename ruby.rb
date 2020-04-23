@@ -235,3 +235,7 @@ puts alphabetize(numbers)
   # This will print the numbers in order of small-large (or A-Z)
 puts alphabetize(numbers, true)
   # This will print the numbers in order of large-small (or Z-A)
+
+
+# S Y M B O L S
+# A symbol is kind of like a variable, and can be used to replace keys in hashes.
