@@ -169,6 +169,13 @@ hash3.each do |month, season|
   puts "#{month}: #{season}"
 end
 
+# You can also iterate over each key or value with the following syntax:
+hash3.each_key ~~~
+hash3.each_value ~~~
+  
+# Or you could only select values that meet a specific parameter:
+hash3.select { |month, season| season == "Winter" }
+
 # With a little work, you can even turn user input into an array and then a hash, like the histogram I made along with Codecademy:
 
 puts "Your phrase: "
@@ -238,4 +245,7 @@ puts alphabetize(numbers, true)
 
 
 # S Y M B O L S
-# A symbol is kind of like a variable, and can be used to replace keys in hashes.
+# A symbol is kind of like a variable, and can also be used to replace keys in hashes.
+# A symbol is immutable, so it can't be changed by later functions.
+
+hash4 
